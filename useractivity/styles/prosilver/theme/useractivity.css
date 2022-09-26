@@ -1,0 +1,92 @@
+.d-none {
+	display: none;
+}
+
+.useractivity-report-title {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.user_activity_report_content table th {
+	background-color: black;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.user_activity_report_content table td {
+	font-size: 12px;
+	padding: 2px 0;
+}
+
+.user_activity_report_content table td:nth-child(1) {
+	text-align: center;
+}
+
+.user_activity_report_content table td:nth-child(2) {
+	padding: 2px 0 2px 20px;
+}
+
+.user_activity_report_content table td .icon.fa-thumbs-down {
+	padding: 0 10px;
+	float: right;
+	position: absolute;
+}
+
+.user_activity_report_content table td .icon.fa-exclamation {
+	padding: 0 40px;
+	float: right;
+	position: absolute;
+}
+
+.user_activity_report_content table tr:nth-child(even) {
+	background-color: white;
+}
+
+.user_activity_report_content table tr:nth-child(odd) {
+	background-color: beige;
+}
+
+.user_activity_report_content table tr:nth-child(even):hover,
+.user_activity_report_content table tr:nth-child(odd):hover {
+	background-color: coral;
+}
+
+.user_activity_report_content table td:nth-child(3),
+.user_activity_report_content table td:nth-child(4) {
+	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+	.user_activity_report_content table th {
+		font-size: 10px;
+	}
+
+	.user_activity_report_content table td {
+		font-size: 8px;
+	}
+
+	.user_activity_report_content table td:nth-child(2) {
+		padding: 2px 0 2px 2px;
+	}
+
+	.user_activity_report_content table td .icon.fa-thumbs-down {
+		display: none;
+	}
+
+	.user_activity_report_content table td .icon.fa-exclamation {
+		display: none;
+	}
+
+	.user_activity_report_content table td.overWeek {
+		background-color: #fabbbb;
+	}
+
+	.user_activity_report_content table td.overMonth {
+		background-color: #FF0000;
+	}
+
+}

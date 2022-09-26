@@ -1,0 +1,31 @@
+imports:
+    - { resource: tables.yml }
+
+services:	
+    kaerol.useractivity.user_listener:
+        class: kaerol\useractivity\event\user_listener
+        arguments:
+            - '@service_container'
+            - '@auth'
+            - '@config'
+            - '@controller.helper'
+            - '@dispatcher'
+            - '@notification_manager'
+            - '@request'
+            - '@template'
+            - '@user'
+        tags:
+            - { name: event.listener }		
+
+    kaerol.useractivity.user_report:
+        class: kaerol\useractivity\controller\user_report
+        arguments:
+            - '@service_container'
+            - '@auth'
+            - '@config'
+            - '@dbal.conn'
+            - '@controller.helper'
+            - '@notification_manager'
+            - '@request'
+            - '@user'
+            - '@language'

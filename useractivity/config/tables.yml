@@ -1,0 +1,4 @@
+parameters:
+    tables.core_users: '%core.table_prefix%users'
+    tables.profile_data: '%core.table_prefix%profile_fields_data'
+

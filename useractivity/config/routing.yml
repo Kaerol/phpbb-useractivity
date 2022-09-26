@@ -1,0 +1,3 @@
+kaerol_useractivity_user_activity_report:
+    path: /user_activity_report
+    defaults: { _controller: kaerol.useractivity.user_report:user_activity_report }
